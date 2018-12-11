@@ -3,16 +3,34 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+var session=require('express-session');
+var bodyParser=require('body-parser');
+var bcrypt= require('bcrypt');
+var model= require('./app-api/models/db');
+var db = model.connection;
 
-var DB= require('./app-server/models/db');
-
+var ApiRouter = require('./app-api/routes/index');
 var indexRouter = require('./app-server/routes/index');
-var loginRouter = require('./app-server/routes/login');
-var signupRouter = require('./app-server/routes/signup');
-var productsRouter = require('./app-server/routes/products');
+
+
 
 
 var app = express();
+app.use(session({
+  secret: 'Work hard',
+  resave: true,
+  uninitialized: false
+}));
+
+app.use("/", function(req, res, next) {
+  if (req.session.userId) {
+    res.locals.user = req.session.userId;
+    res.locals.userName = req.session.userName;
+  }
+  next();
+});
+app.use('/', indexRouter);
+app.use('/api', ApiRouter);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'app-server','views'));
@@ -22,13 +40,7 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
-
-app.use('/', indexRouter);
-app.use('/login', loginRouter);
-app.use('/signup', signupRouter);
-app.use('/products', productsRouter);
-
+app.use(express.static(path.join(__dirname, 'public')));  
 
 
 // catch 404 and forward to error handler

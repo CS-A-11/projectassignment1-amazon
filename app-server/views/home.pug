@@ -1,0 +1,111 @@
+extends layout
+
+
+block content
+    section.banner-bottom-wthreelayouts.py-lg-5.py-3
+        .container-fluid
+            .inner-sec-shop.px-lg-4.px-3
+                .row
+                    .product-googles-info.googles
+                        .men-pro-item
+                            .men-thumb-item
+                            img.img-fluid(src='images/s1.jpg', alt='')
+                            .men-cart-pro
+                                .inner-men-cart-pro
+                                a.link-product-add-cart(href='single.html') Quick View
+                            span.product-new-top New
+                            .item-info-product
+                                .info-product-price
+                                    .grid_meta
+                                    .product_price
+                                        h4
+                                        a(href='single.html') Farenheit (Grey)
+                                        .grid-price.mt-2
+                                        span.money $575.00
+                                    ul.stars
+                                        li
+                                        a(href='#')
+                                            i.fa.fa-star(aria-hidden='true')
+                                        li
+                                        a(href='#')
+                                            i.fa.fa-star(aria-hidden='true')
+                                        li
+                                        a(href='#')
+                                            i.fa.fa-star(aria-hidden='true')
+                                        li
+                                        a(href='#')
+                                            i.fa.fa-star(aria-hidden='true')
+                                        li
+                                        a(href='#')
+                                            i.fa.fa-star-half-o(aria-hidden='true')
+                                .googles.single-item.hvr-outline-out
+                                    form(action='#', method='post')
+                                        input(type='hidden', name='cmd', value='_cart')
+                                        input(type='hidden', name='add', value='1')
+                                        input(type='hidden', name='googles_item', value='Farenheit')
+                                        input(type='hidden', name='amount', value='575.00')
+                                        button.googles-cart.pgoogles-cart(type='submit')
+                                        i.fas.fa-cart-plus
+                                .clearfix
+
+
+                .row
+                    .col-md-12.middle-slider.my-4
+                        .middle-text-info
+                            h3.tittle-w3layouts.two.text-center.my-lg-4.mt-3 Summer Flash sale
+                        #simply-countdown-custom.simply-countdown-custom
+                            .simply-section
+                            div
+                                span.simply-amount 44
+                                span.simply-word days
+                            .simply-section
+                            div
+                                span.simply-amount 7
+                                span.simply-word hours
+                            .simply-section
+                            div
+                                span.simply-amount 40
+                                span.simply-word minutes
+                            .simply-section
+                            div
+                                span.simply-amount 13
+                                span.simply-word seconds
+
+                .testimonials.py-lg-4.py-3.mt-4
+                    .testimonials-inner.py-lg-4.py-3
+                        h3.tittle-w3layouts.text-center.my-lg-4.my-4 Tesimonials
+                        #carouselExampleControls.carousel.slide(data-ride='carousel')
+                        .carousel-inner(role='listbox')
+                            .carousel-item
+                            .testimonials_grid.text-center
+                                h3
+                                | Anamarias
+                                span Customer
+                                label United States
+                                p
+                                | Maecenas interdum, metus vitae tincidunt porttitor, magna quam egestas sem, ac scelerisque nisl nibh vel lacus.
+                                | Proin eget gravida odio. Donec ullamcorper est eu accumsan cursus.
+                            .carousel-item
+                            .testimonials_grid.text-center
+                                h3
+                                | Esmeralda
+                                span Customer
+                                label United States
+                                p
+                                | Maecenas interdum, metus vitae tincidunt porttitor, magna quam egestas sem, ac scelerisque nisl nibh vel lacus.
+                                | Proin eget gravida odio. Donec ullamcorper est eu accumsan cursus.
+                            .carousel-item.active
+                            .testimonials_grid.text-center
+                                h3
+                                | Gretchen
+                                span Customer
+                                label United States
+                                p
+                                | Maecenas interdum, metus vitae tincidunt porttitor, magna quam egestas sem, ac scelerisque nisl nibh vel lacus.
+                                | Proin eget gravida odio. Donec ullamcorper est eu accumsan cursus.
+                            a.carousel-control-prev.test(href='#carouselExampleControls', role='button', data-slide='prev')
+                            span.fas.fa-long-arrow-alt-left
+                            span.sr-only Previous
+                            a.carousel-control-next.test(href='#carouselExampleControls', role='button', data-slide='next')
+                            span.fas.fa-long-arrow-alt-right(aria-hidden='true')
+                            span.sr-only Next

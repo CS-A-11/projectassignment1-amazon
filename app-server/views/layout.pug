@@ -2,6 +2,252 @@ doctype html
 html
   head
     title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
+    title Goggles Ecommerce Category Bootstrap responsive Web Template | Home :: w3layouts
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(charset='utf-8')
+    meta(name='keywords', content='Goggles a Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, \
+    Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design')
+    script.
+      addEventListener("load", function () {
+      setTimeout(hideURLbar, 0);
+      }, false);
+      function hideURLbar() {
+      window.scrollTo(0, 1);
+      }
+    link(href='stylesheets/bootstrap.css', rel='stylesheet', type='text/css')
+    link(href='stylesheets/login_overlay.css', rel='stylesheet', type='text/css')
+    link(href='stylesheets/style6.css', rel='stylesheet', type='text/css')
+    link(rel='stylesheet', href='stylesheets/shop.css', type='text/css')
+    link(rel='stylesheet', href='stylesheets/owl.carousel.css', type='text/css', media='all')
+    link(rel='stylesheet', href='stylesheets/owl.theme.css', type='text/css', media='all')
+    link(href='stylesheets/style.css', rel='stylesheet', type='text/css')
+    link(href='stylesheets/fontawesome-all.css', rel='stylesheet')
+    link(href='//fonts.googleapis.com/css?family=Inconsolata:400,700', rel='stylesheet')
+    link(href='//fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800', rel='stylesheet')
+    link(rel='stylesheet', type='text/css', href='vendor/bootstrap/css/bootstrap.min.css')
+    link(rel='stylesheet', type='text/css', href='fonts/font-awesome-4.7.0/css/font-awesome.min.css')
+    link(rel='stylesheet', type='text/css', href='vendor/animate/animate.css')
+    link(rel='stylesheet', type='text/css', href='vendor/css-hamburgers/hamburgers.min.css')
+    link(rel='stylesheet', type='text/css', href='vendor/select2/select2.min.css')
+    link(rel='stylesheet', type='text/css', href='Stylesheets/util.css')
+    link(rel='stylesheet', type='text/css', href='stylesheets/main.css')
   body
+    #home.banner-top.container-fluid
+      // header
+      header
+        .row
+          .col-md-3.top-info.text-left.mt-lg-4
+            h6 Need Help
+            ul
+              li
+                i.fas.fa-phone
+                |  Call
+              li.number-phone.mt-3   12345678099
+          .col-md-6.logo-w3layouts.text-center
+            h1.logo-w3layouts
+              a.navbar-brand(href='index.html')
+                | Amazon
+          .col-md-3.top-info-cart.text-right.mt-lg-4
+            ul.cart-inner-info
+              li.button-log
+                a.btn-open(href='/signin')
+                  span.fa.fa-user(aria-hidden='true')
+              li.galssescart.galssescart2.cart.cart.box_1
+                form.last(action='#', method='post')
+                  input(type='hidden', name='cmd', value='_cart')
+                  input(type='hidden', name='display', value='1')
+                  button.top_googles_cart(type='submit', name='submit', value='')
+                    | My Cart
+                    i.fas.fa-cart-arrow-down
+        .search
+          .mobile-nav-button
+            button#trigger-overlay(type='button')
+              i.fas.fa-search
+          // open/close
+          .overlay.overlay-door
+            button.overlay-close(type='button')
+              i.fa.fa-times(aria-hidden='true')
+            form.d-flex(action='#', method='post')
+              input.form-control(type='search', placeholder='Search here...', required='')
+              button.btn.btn-primary.submit(type='submit')
+                i.fas.fa-search
+          // open/close
+        label.top-log.mx-auto
+        nav.navbar.navbar-expand-lg.navbar-light.bg-light.top-header.mb-2
+          button.navbar-toggler.mx-auto(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+            span.navbar-toggler-icon
+          #navbarSupportedContent.collapse.navbar-collapse
+            ul.navbar-nav.nav-mega.mx-auto
+              li.nav-item.active
+                a.nav-link.ml-lg-0(href='/')
+                  | Home
+                  span.sr-only (current)
+              li.nav-item
+                a.nav-link(href='/about') About
+              li.nav-item.dropdown
+                a#navbarDropdown.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                  | Features
+                ul.dropdown-menu.mega-menu
+                  li
+                    .row
+                      .col-md-4.media-list.span4.text-left
+                        h5.tittle-w3layouts-sub  Tittle goes here 
+                        ul
+                          li.media-mini.mt-3
+                            a(href='shop.html') Designer Glasses
+                          li
+                            a(href='shop.html')  Ray-Ban
+                          li
+                            a(href='shop.html') Prescription Glasses
+                          li.mt-3
+                            h5 View more pages
+                          li.mt-2
+                            a(href='/about') About
+                          li
+                            a(href='customer.html') Customers
+                      .col-md-4.media-list.span4.text-left
+                        h5.tittle-w3layouts-sub  Tittle goes here 
+                        .media-mini.mt-3
+                          a(href='shop.html')
+                            img.img-fluid(src='images/g2.jpg', alt='')
+                      .col-md-4.media-list.span4.text-left
+                        h5.tittle-w3layouts-sub Tittle goes here 
+                        .media-mini.mt-3
+                          a(href='shop.html')
+                            img.img-fluid(src='images/g3.jpg', alt='')
+                    hr
+              li.nav-item.dropdown
+                a#navbarDropdown1.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                  | Shop
+                ul.dropdown-menu.mega-menu
+                  li
+                    .row
+                      .col-md-4.media-list.span4.text-left
+                        h5.tittle-w3layouts-sub  Tittle goes here 
+                        ul
+                          li.media-mini.mt-3
+                            a(href='shop.html') Designer Glasses
+                          li
+                            a(href='shop.html')  Ray-Ban
+                          li
+                            a(href='shop.html') Prescription Glasses
+                          li
+                            a(href='shop.html') Rx Sunglasses
+                          li
+                            a(href='shop.html') Contact Lenses
+                          li
+                            a(href='shop.html') Multifocal Glasses
+                          li
+                            a(href='shop.html') Kids Glasses
+                          li
+                            a(href='shop.html') Lightweight Glasses
+                          li
+                            a(href='shop.html') Sports Glasses
+                      .col-md-4.media-list.span4.text-left
+                        h5.tittle-w3layouts-sub  Tittle goes here 
+                        ul
+                          li.media-mini.mt-3
+                            a(href='shop.html') Brooks Brothers
+                          li
+                            a(href='shop.html') Persol
+                          li
+                            a(href='shop.html') Polo Ralph Lauren
+                          li
+                            a(href='shop.html') Prada
+                          li
+                            a(href='shop.html') Ray-Ban Jr
+                          li
+                            a(href='shop.html') Sferoflex
+                        ul.sub-in.text-left
+                          li
+                            a(href='shop.html') Polo Ralph Lauren
+                          li
+                            a(href='shop.html') Prada
+                          li
+                            a(href='shop.html') Ray-Ban Jr
+                      .col-md-4.media-list.span4.text-left
+                        h5.tittle-w3layouts-sub-nav Tittle goes here 
+                        .media-mini.mt-3
+                          a(href='shop.html')
+                            img.img-fluid(src='images/g1.jpg', alt='')
+                    hr
+              li.nav-item
+                a.nav-link(href='contact.html') Contact
+      // //header
+      
+
     block content
+
+    // footer
+    footer.py-lg-5.py-3
+      .container-fluid.px-lg-5.px-3
+        .row.footer-top-w3layouts
+          .col-lg-3.footer-grid-w3ls
+            .footer-title
+              h3 About Us
+            .footer-text
+              p
+                | Curabitur non nulla sit amet nislinit tempus convallis quis ac lectus. lac inia eget consectetur sed, convallis at
+                | tellus. Nulla porttitor accumsana tincidunt.
+              ul.footer-social.text-left.mt-lg-4.mt-3
+                li.mx-2
+                  a(href='#')
+                    span.fab.fa-facebook-f
+                li.mx-2
+                  a(href='#')
+                    span.fab.fa-twitter
+                li.mx-2
+                  a(href='#')
+                    span.fab.fa-google-plus-g
+                li.mx-2
+                  a(href='#')
+                    span.fab.fa-linkedin-in
+                li.mx-2
+                  a(href='#')
+                    span.fas.fa-rss
+                li.mx-2
+                  a(href='#')
+                    span.fab.fa-vk
+          .col-lg-3.footer-grid-w3ls
+            .footer-title
+              h3 Get in touch
+            .contact-info
+              h4 Location :
+              p 0926k 4th block building, king Avenue, New York City.
+              .phone
+                h4 Contact :
+                p Phone : +121 098 8907 9987
+                p
+                  | Email :
+                  a(href='mailto:info@example.com') info@example.com
+          .col-lg-3.footer-grid-w3ls
+            .footer-title
+              h3 Quick Links
+            ul.links
+              li
+                a(href='index.html') Home
+              li
+                a(href='about.html') About
+              li
+                a(href='404.html') Error
+              li
+                a(href='shop.html') Shop
+              li
+                a(href='contact.html') Contact Us
+          .col-lg-3.footer-grid-w3ls
+            .footer-title
+              h3 Sign up for your offers
+            .footer-text
+              p
+                | By subscribing to our mailing list you will always get latest news and updates from us.
+              form(action='#', method='post')
+                input.form-control(type='email', name='Email', placeholder='Enter your email...', required='')
+                button.btn1
+                  i.far.fa-envelope(aria-hidden='true')
+                .clearfix  
+        .copyright-w3layouts.mt-4
+          p.copy-right.text-center
+            | © 2018 Goggles. All Rights Reserved | Design by
+            a(href='http://w3layouts.com/')  W3layouts 
+    // //footer
+  

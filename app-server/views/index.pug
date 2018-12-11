@@ -1,12 +1,49 @@
 extends layout
 
 block content
+  .banner
+    #carouselExampleIndicators.carousel.slide(data-ride='carousel')
+      ol.carousel-indicators
+        li.active(data-target='#carouselExampleIndicators', data-slide-to='0')
+        li(data-target='#carouselExampleIndicators', data-slide-to='1')
+        li(data-target='#carouselExampleIndicators', data-slide-to='2')
+        li(data-target='#carouselExampleIndicators', data-slide-to='3')
+      .carousel-inner(role='listbox')
+        .carousel-item.active
+          .carousel-caption.text-center
+            h3
+              | Men’s eyewear
+              span Cool summer sale 50% off
+            a.btn.btn-sm.animated-button.gibson-three.mt-4(href='shop.html') Shop Now
+        .carousel-item.item2
+          .carousel-caption.text-center
+            h3
+              | Women’s eyewear
+              span Want to Look Your Best?
+            a.btn.btn-sm.animated-button.gibson-three.mt-4(href='shop.html') Shop Now
+        .carousel-item.item3
+          .carousel-caption.text-center
+            h3
+              | Men’s eyewear
+              span Cool summer sale 50% off
+            a.btn.btn-sm.animated-button.gibson-three.mt-4(href='shop.html') Shop Now
+        .carousel-item.item4
+          .carousel-caption.text-center
+            h3
+              | Women’s eyewear
+              span Want to Look Your Best?
+            a.btn.btn-sm.animated-button.gibson-three.mt-4(href='shop.html') Shop Now
+      a.carousel-control-prev(href='#carouselExampleIndicators', role='button', data-slide='prev')
+        span.carousel-control-prev-icon(aria-hidden='true')
+        span.sr-only Previous
+      a.carousel-control-next(href='#carouselExampleIndicators', role='button', data-slide='next')
+        span.carousel-control-next-icon(aria-hidden='true')
+        span.sr-only Next
+
   h1= title
+  li= products
   p Welcome to #{title}
-  a(href = '/login/')  Log in
-  br
-  br
-  a(href = '/signup/') sign up
+  a(href = '/signin') sign in
   br
   br
   a(href = '/products/') Products

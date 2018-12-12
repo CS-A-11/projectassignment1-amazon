@@ -7,10 +7,10 @@ projectassignment1-amazon created by GitHub Classroom
 
 ### Amazon Replica 
 
-## Prject Group members:
+## Project Group members:
 
-omer ali (16L-6309)
-hassan majid (16L-4396) 
+omer ali (16L-6309) ,
+hassan majid (16L-4396) ,
 waqas wasi (15L-4519) 
 
 ## About Amazon: 

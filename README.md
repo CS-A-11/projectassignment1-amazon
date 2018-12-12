@@ -3,55 +3,55 @@ projectassignment1-amazon created by GitHub Classroom
 
 
 
-##project title: < /br>
+## project title: 
 
-###Amazon Replica < /br>
+### Amazon Replica 
 
-##Prject Group members: < /br>
+## Prject Group members:
 
-omer ali (16L-6309) < /br>
-hassan majid (16L-4396) < /br>
-waqas wasi (15L-4519) < /br>
+omer ali (16L-6309)
+hassan majid (16L-4396) 
+waqas wasi (15L-4519) 
 
-##About Amazon: < /br>
+## About Amazon: 
 
-Ours is an online E-commerce shopping app, user can view, order and sell things on our app. < /br>
+Ours is an online E-commerce shopping app, user can view, order and sell things on our app. 
 
-##Homepage: < /br>
+## Homepage: 
 
 
-##UseCases:
+## UseCases:
 
-1. user can order products < /br>
-2. user can view produts < /br>
-3. user can sell his products < /br>
-4. login < /br>
-5. signup < /br>
-6. shopping cart < /br>
-7. chatbot < /br>
-8. review product < /br>
+1. user can order products 
+2. user can view produts 
+3. user can sell his products 
+4. login 
+5. signup 
+6. shopping cart 
+7. chatbot 
+8. review product
 
-##Schema:< /br>
+## Schema:
 
-I.	product schema  < /br>
-II.	user schema < /br>
-III.	rating  schema < /br>
-IV.	complaint managment schema < /br>
- V.     cart schema < /br>
+I.	product schema  
+II.	user schema 
+III.	rating  schema 
+IV.	complaint managment schema 
+ V.     cart schema 
  
 ## Collections:
-user < \br>
- product < \br>
-order < \br>
-### nested collection:< \br>
+user 
+ product
+order 
+### nested collection:
 review 
 item
 
 ## Contribution:
-### Omer Ali (back -end engineer): < \br>
+### Omer Ali (back -end engineer): 
 i have done CRUD operations and i have handeled middleware of our amazon replica.
 
-### Hassan (front end engineer): < \br>
+### Hassan (front end engineer): 
 
 I worked in front end technology.I have made login sign up page of Amazon. I have also assisted waqas in finding appropirate data for our virtual assistant. I reserched in integrating chatbot in our app.
 
